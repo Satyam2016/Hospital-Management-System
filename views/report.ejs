@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/report.css">
+  <script src="js/report.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="top-banner">
+    <h1>Welcome to Our Hospital</h1>
+  </div>
+  <div class="content">
+    <div class="sidenav">
+      <a href="/">DASHBOARD</a>
+      <a href="/patient">Patient</a>
+      <a href="/doctor">Doctor</a>
+      <a href="/room">Room</a>
+      <a href="/nurse">Nurse</a>
+      <a href="/appointment">Appointment</a>
+      <a href="/prescription_diagnoses">Prescription_Diagnoses</a>
+      <a href="/billing_payment">Billing & Payment</a>
+      <a href="/report">Generate Report</a>
+    </div>
+     <div class="main">
+          <h2>Patient Summary</h2>
+          <div class="search">
+               <input type="text" placeholder="Patient ID" id="patient_id">
+               <button onclick="generateReport()">Generate</button>
+          </div>
+          <div class="patient-summary">
+               <table id="summary-table"></table>
+          </div>
+     </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Reset default browser styles */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     font-family: Arial, sans-serif;
+   }
+   
+   .top-banner {
+     background-color: #003366;
+     color: white;
+     padding: 20px;
+     text-align: center;
+   }
+   
+   .content {
+     display: flex;
+     gap: 20px;
+     padding: 20px;
+     justify-content: center;
+   }
+   
+   .sidenav {
+     width: 250px;
+   }
+   
+   .sidenav a {
+     display: block;
+     padding: 10px 20px;
+     text-decoration: none;
+     color: white;
+     background-color: #003366;
+     margin-bottom: 5px;
+   }
+   
+   .sidenav a:hover {
+     background-color: #005588;
+   }
+   
+   .main {
+     width: calc(100% - 250px); /* Adjusted width to accommodate the sidenav */
+   }
+   
+   h2 {
+     color: #333;
+   }
+   
+   .search {
+     margin-bottom: 20px;
+   }
+   
+   .search input[type="text"] {
+     padding: 8px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+   }
+   
+   .search button {
+     padding: 8px 20px;
+     background-color: #005588;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+   }
+   
+   .search button:hover {
+     background-color: #0077aa;
+   }
+   
+   /* Reset default table styles */
+table {
+     border-collapse: collapse;
+     width: 100%;
+   }
+   
+   th, td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: left;
+   }
+   
+   th {
+     background-color: #f2f2f2;
+   }
+   
+   /* Style alternating rows */
+   tr:nth-child(even) {
+     background-color: #f2f2f2;
+   }
+   
+   /* Hover effect on rows */
+   tr:hover {
+     background-color: #ddd;
+   }
+   
+   /* Align text in specific columns */
+   td:nth-child(2), th:nth-child(2) {
+     text-align: left;
+   }
+   
+   /* Increase padding for headers */
+   th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+   }
+   
+   /* Add border to the bottom of the last row */
+   tr:last-child {
+     border-bottom: 2px solid #ddd;
+   }
+   
+   

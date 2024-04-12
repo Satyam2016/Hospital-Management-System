@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+     <link rel="stylesheet" href="css/room.css">
+     <script src="js/room_script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+     <div class="top-banner">
+          <h1>Welcome to Our Hospital</h1>
+     </div>
+     <div class="content">
+          <div class="sidenav">
+               <a href="/">DASHBOARD</a>
+      <a href="/patient">Patient</a>
+      <a href="/doctor">Doctor</a>
+      <a href="/room">Room</a>
+      <a href="/nurse">Nurse</a>
+      <a href="/appointment">Appointment</a>
+      <a href="/prescription_diagnoses">Prescription_Diagnoses</a>
+      <a href="/billing_payment">Billing & Payment</a>
+      <a href="/report">Generate Report</a>
+          </div>
+
+          <div class="box">
+
+               <div class="tab">
+                    <button onclick="newroom()">Add New Room</button>
+                    <button onclick="allroom()"> Show All Room</button>
+               </div>
+               <div class="tab">
+                    <div class="item">
+                         <label for="roomType">Room Type:</label>
+                         <select id="roomType">
+                              <option value="all">All</option>
+                              <option value="private">Private</option>
+                              <option value="semi-private">Semi-Private</option>
+                              <option value="ward">Ward</option>
+                              <option value="cabin">Cabin</option>
+                         </select>
+                    </div>
+                    <div class="item">
+                         <label for="roomPrice">Room_Price:</label>
+                         <input type="number" id="roomPrice">
+                    </div>
+                    <div class="item">
+                         <button onclick="filterRooms()">Filter</button>
+                         <button onclick="resetFilter()">Reset</button>
+                    </div>
+               </div>
+
+
+               <div class="common-area">
+                    <div class="room-form" id="form">
+                         <hr>
+                              <br>
+                              <h2>Add New Room</h2>
+                              <br>
+                         <form id="newroom">
+                              <label for="roomtype">Room Type</label>
+                              <select name="roomtype" id="roomtype">
+                                   <option value="private">Private</option>
+                                   <option value="semi-private">Semi-Private</option>
+                                   <option value="ward">Ward</option>
+                                   <option value="cabin">Cabin</option>
+                              </select>
+                              <label for="bedcount">Bed-Count</label>
+                              <input type="number" id="bedcount" name="bedcount" required>
+
+                              <label for="roomprice">Room Price</label>
+                              <input type="number" id="roomprice" name="roomprice" required>
+                              <br>
+                              <input type="button" value="submit" onclick="addroom()">
+                         </form>
+                    </div>
+                    <div class="room-table" id="table">
+                         <table id="roomtable"></table>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

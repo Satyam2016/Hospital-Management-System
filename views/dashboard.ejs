@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/dashboard_script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+  <div class="top-banner">
+    <h1>Welcome to Our Hospital</h1>
+  </div>
+  <div class="content">
+    <div class="sidenav">
+      <a href="/">DASHBOARD</a>
+      <a href="/patient">Patient</a>
+      <a href="/doctor">Doctor</a>
+      <a href="/room">Room</a>
+      <a href="/nurse">Nurse</a>
+      <a href="/appointment">Appointment</a>
+      <a href="/prescription_diagnoses">Prescription_Diagnoses</a>
+      <a href="/billing_payment">Billing & Payment</a>
+      <a href="/report">Generate Report</a>
+    </div>
+    <div class="main">
+        <h2>DASHBOARD</h2>
+        <div class="card">
+          <h3>Patients</h3>
+          <p>Number of Patients: </p>
+        </div>
+        <div class="card">
+          <h3>Doctors</h3>
+          <p>Number of Doctors: <%= doctor %></p>
+        </div>
+        <div class="card">
+          <h3>Rooms</h3>
+          <p>Number of Rooms: <%= room %></p>
+        </div>
+        <div class="card">
+          <h3>Nurses</h3>
+          <p>Number of Nurses: <%= nurse %></p>
+        </div>
+        <div class="card">
+          <h3>Diagnoses </h3>
+          <p>Number of Diagnoses: <%= diagnoses %></p>
+        </div>
+        <div class="card">
+          <h3>Prescription </h3>
+          <p>Number of Prescription: <%= prescription %></p>
+        </div>
+
+        <div class="card">
+          <h3>Appointments</h3>
+          <p>Number of Appointments: <%= appointment %></p>
+        </div>  
+        <div class="card">
+          <h3>Billing</h3>
+          <p>Number of Billing : <%= billing %></p>
+        </div>
+        <div class="card">
+          <h3>Payment</h3>
+          <p>Number of Payment : <%= payment %></p>
+        </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-banner {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.sidenav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #003366;
+  margin-bottom: 5px;
+}
+
+.sidenav a:hover {
+  background-color: #005588;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 250px);
+}
+
+.tab {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab button {
+  padding: 10px 20px;
+  background-color: #005588;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab button:hover {
+  background-color: #0077aa;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+}
+
+.tab input{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.item input[type="text"],
+.item input[type="number"],
+.item input[type="date"],
+.item select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+.item label {
+  line-height: 32px;
+}
+
+.common-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.patient-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.patient-form h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form input[type="button"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+form input[type="button"] {
+  background-color: #005588;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form input[type="button"]:hover {
+  background-color: #0077aa;
+}
+
+.patient-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}

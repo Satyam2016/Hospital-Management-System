@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+     <link rel="stylesheet" href="css/patient.css">
+     <script src="js/patient_script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+     <div class="top-banner">
+          <h1>Welcome to Our Hospital</h1>
+     </div>
+     <div class="content">
+          <div class="sidenav">
+               <a href="/">DASHBOARD</a>
+               <a href="/patient">Patient</a>
+               <a href="/doctor">Doctor</a>
+               <a href="/room">Room</a>
+               <a href="/nurse">Nurse</a>
+               <a href="/appointment">Appointment</a>
+               <a href="/prescription_diagnoses">Prescription_Diagnoses</a>
+               <a href="/billing_payment">Billing & Payment</a>
+               <a href="/report">Generate Report</a>
+
+          </div>
+          <div class="box">
+               <div class="tab">
+                    <button  onclick="showform()">Add Patient</button>
+                    <button  onclick="showtable()">Show All Patient</button>
+               </div>
+
+               <div class="tab">
+                    <div class="item">
+                         <label for="patient_id">Patient_id</label>
+                         <input type="number" id="patient_id">
+                    </div>
+                    <div class="item">
+                         <label for="firstName">First Name</label>
+                         <input type="text" id="firstName">
+                    </div>
+
+                    <button onclick="filterPatient()">Filter</button>
+                    <button onclick="reset()">Reset</button>
+               </div>
+
+
+               <div class="common-area">
+                    <div class="patient-form" id="form">
+                         <hr>
+                         <br>
+                         <h2>Add Patient</h2>
+                         <br>
+                         <form id="formsubmit">
+                              <!-- <form onsubmit="popup()" method="POST" action="http://localhost:3000/patient-data"> -->
+                              <label for="firstname">First Name</label>
+                              <input type="text" id="firstname" name="firstname" required>
+                              <label for="lastname">Last Name</label>
+                              <input type="text" id="lastname" name="lastname" required>
+                              <label for="age">Age</label>
+                              <input type="number" id="age" name="age" required>
+                              <label for="gender"> Gender</label>
+                              <select name="gender" id="gender" required>
+                                   <option value="male">Male</option>
+                                   <option value="female">Female</option>
+                                   <option value="other">Other</option>
+                              </select>
+                              <label for="address">Address</label>
+                              <input type="text" id="address" name="address" required>
+                              <label for="admitdate">Admit Date</label>
+                              <input type="date" id="admitdate" name="admitdate" required>
+                              <label for="roomno">Room No</label>
+                              <input type="number" id="roomno" name="roomno">
+                              <br>
+                              <input type="button" value="submit" onclick="submitForm()">
+                         </form>
+                    </div>
+                    <div class="patient-table" id="table">
+                         <table id="patienttable"></table>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

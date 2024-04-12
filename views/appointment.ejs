@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+     <link rel="stylesheet" href="css/appointment.css">
+     <script src="js/appointment_script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+     <div class="top-banner">
+          <h1>Welcome to Our Hospital</h1>
+     </div>
+     <div class="content">
+          <div class="sidenav">
+               <a href="/">DASHBOARD</a>
+      <a href="/patient">Patient</a>
+      <a href="/doctor">Doctor</a>
+      <a href="/room">Room</a>
+      <a href="/nurse">Nurse</a>
+      <a href="/appointment">Appointment</a>
+      <a href="/prescription_diagnoses">Prescription_Diagnoses</a>
+      <a href="/billing_payment">Billing & Payment</a>
+      <a href="/report">Generate Report</a>
+          </div>
+
+          <div class="box">
+               <div class="tab">
+                    <button onclick="appointmentForm()">Create Appointment</button>
+                    <button onclick="appointmentTable()"> Show All Appoinment</button>
+               </div>
+               <div class="tab">
+                    <div class="item">
+                         <label for="appointment_id">Appointment_Id</label>
+                         <input type="numbers" id="appointment_id">
+                    </div>
+                    <div class="item">
+                         <label for="patient_Id">Patient_Id</label>
+                         <input type="numbers" id="patient_Id">
+                    </div>
+                    <div class="item">
+                         <label for="doctor_Id">Doctor_Id</label>
+                         <input type="numbers" id="doctor_Id">
+                    </div>
+                    <button onclick="filterAppointment()">Filter</button>
+                    <button onclick="resetFilter()">Reset</button>
+               </div>
+               <div class="common-area">
+                    <div class="appointment-form" id="form">
+                         <hr>
+                         <br>
+                         <h2>Schedule Appointment</h2>
+                         <form id="appointmentForm">
+                              <label for="patient_id">Patient_ID</label>
+                              <input type="text" id="patient_id" name="patient_id">
+                              <label for="doctor_id">Doctor_ID</label>
+                              <input type="text" id="doctor_id" name="doctor_id">
+                              <label for="appointment_date">Appointment_Date</label>
+                              <input type="date" id="appointment_date" name="appointment_date">
+                              <label for="start_time">Start_Time</label>
+                              <input type="time" id="start_time" name="start_time">
+                              <label for="end_time">End_Time</label>
+                              <input type="time" id="end_time" name="end_time">
+                              <label for="reason">Reason:</label>
+                              <input type="text" id="reason" name="reason">
+                              <input type="button" value="submit" onclick="submitAppointment()">
+                         </form>
+                    </div>
+                    <div class="appointment-table" id="table">
+                         <table id="appointmentTable"></table>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+
+</html>

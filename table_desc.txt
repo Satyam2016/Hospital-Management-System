@@ -1,0 +1,25 @@
+In this example, we create tables for patients, doctors, nurses, rooms, assignments, diagnoses, prescriptions, lab_tests, lab_results, billing, and payments.
+
+The patients table contains patient information, such as their name, age, gender, address, and admission and discharge dates.
+
+The doctors table contains information about doctors, including their name, specialty, and room number.
+
+The nurses table contains information about nurses, including their name, shift start and end times, and station number.
+
+The rooms table contains information about rooms, including their type, station number, bed count, and price.
+
+The assignments table contains information about patient assignments, including the patient ID, doctor ID, nurse ID, room number, and start and end times.
+
+The diagnoses table contains information about patient diagnoses, including the patient ID, doctor ID, diagnosis, and diagnosis date.
+
+The prescriptions table contains information about patient prescriptions, including the patient ID, doctor ID, prescription, and prescription date.
+
+The lab_tests table contains information about patient lab tests, including the patient ID, lab test name, and lab test date.
+
+The lab_results table contains information about patient lab test results, including the lab test ID, lab test result, and lab test result date.
+
+The billing table contains information about patient billing, including the patient ID, bill date, and total amount.
+
+The payments table contains information about patient payments, including the payment date and amount.
+
+Note that this is just an example, and you may need to modify the queries to fit your specific needs. Additionally, you may need to add more tables or columns to capture all the necessary information for your hospital management system.
