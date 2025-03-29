@@ -1,14 +1,72 @@
-Overview
-This Hospital Management System is a web-based application designed to manage the operations of a hospital, including patient management, doctor scheduling, and medical record keeping. The system is built using Node.js, Express, MySQL, EJS, CSS, and SweetAlert for user interaction.
 
-Features
+# Hospital Management System
 
-Patient Management: Add, view, update, and delete patient records.
+The Hospital Management System is a full-stack web application designed to manage hospital operations efficiently. It enables patient registration, appointment scheduling, doctor assignments, and medical record maintenance. The system is built using modern web technologies to ensure smooth functionality, scalability, and security.
 
-Doctor Scheduling: Manage doctor schedules and appointments.
+#
 
-Medical Records: Maintain comprehensive medical records for patients.
+## Key Features
 
-User Authentication: Secure login for administrators and staff.
+- Patient Management: Register, update, and maintain patient records.
 
-Alerts and Notifications: Prompt and notify users using SweetAlert.
+- Appointment Scheduling: Book, reschedule, and manage appointments seamlessly.
+
+- Doctor Management: Assign doctors to patients and manage their schedules.
+
+- Medical Records Storage: Maintain and retrieve patient medical histories.
+
+- Billing System: Generate and manage hospital bills efficiently.
+
+
+## Tech Stack
+
+- **Frontend:** React (Vite)
+
+- **Backend:** Node.js (Express.js)
+
+- **Database:** MySQL
+
+
+# Installation
+
+### Backend Setup
+
+1. Install dependencies:
+
+```bash
+cd backend
+npm install
+```
+
+2. Run the backend:
+
+```bash
+node server.js
+```
+
+### Frontend Setup
+
+1. Install dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+2. Run the backend:
+
+```bash
+npm run dev
+```
+
+
+    
+## Usage
+
+- Register as a patient, doctor, or admin.
+
+- Book appointments and manage schedules.
+
+- Access medical records and billing information.
+
+- Receive real-time notifications for important updates.
