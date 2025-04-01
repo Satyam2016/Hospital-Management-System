@@ -20,7 +20,7 @@ The Hospital Management System is a full-stack web application designed to manag
 
 ## Tech Stack
 
-- **Frontend:** React (Vite)
+- **Frontend:** HTML, CSS
 
 - **Backend:** Node.js (Express.js)
 
